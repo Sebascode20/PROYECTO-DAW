@@ -15,3 +15,5 @@ Nuestra aplicación se diseñó para ser una herramienta completa y versátil qu
 [Notion](https://www.notion.so/Actividades-del-proyecto-de-daw-c347e569cc254f3297936530450856ef?pvs=4)
 
 [Mockups](https://www.figma.com/file/zXtk7O8NT3jK5Xt7ujjOBo/Untitled?type=design&node-id=0%3A1&mode=design&t=QgQoenrbTSdA86x9-1)
+
+[Trello](https://trello.com/invite/b/7OwUqygl/ATTI24cfd2d0d5c3aae9be0b9ce570f100c90E26A98D/proyecto-app-notas)
