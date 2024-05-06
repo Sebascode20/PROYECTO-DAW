@@ -71,5 +71,8 @@ export function handleAuthError(error) {
         showMessage("Fallo al conectar, revise su conexion a internet", "error");
     } else if(error.code == "auth/too-many-requests"){
         showMessage("Has intentado ingresar muchas veces, por favor intentalo más tarde.")
-    } else { showMessage("Error desconocido al autenticar: " + error.message, "error"); }
+    } else if(error.code === "auth/internal-error"){
+        showMessage("Ha ocurrido una error al iniciar sesion con google, intente de nuevo por favor.", "e")
+    }
+    else { showMessage("Error desconocido al autenticar: " + error.message, "error"); }
 }

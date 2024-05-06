@@ -4,4 +4,5 @@ import { auth } from './firebase.js';
 const logout = document.querySelector('#logoutButton');
 logout.addEventListener('click', async () =>{
    await signOut(auth);
+   window.location.href = 'Registro.html';
 });

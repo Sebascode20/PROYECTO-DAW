@@ -43,7 +43,7 @@ body{
     z-index: 100;  
 }
 .sidebar.close{
-    width: 88px;
+    width: 110px;
 }
 /* ===== Reusable ===== */
 .sidebar li{
@@ -88,6 +88,11 @@ body{
 .sidebar header .image-text{
     display: flex;
     align-items: center;
+}
+
+.sidebar header .image img {
+    width: 40px;
+    border-radius: 6px;
 }
 .sidebar header .logo-text{
     display: flex;
@@ -244,3 +249,4 @@ header .image-text .profession{
     height: 100vh;
     width: calc(100% - 78px);
 }
+

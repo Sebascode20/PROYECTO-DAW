@@ -5,17 +5,20 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Registro Unotes </title>
+        <!-- Toasty -->
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+        <!-- CSS -->
         <link rel="stylesheet" href="css/login.css">             
         <!-- Boxicons CSS -->
         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <!-- modulos javascript -->
         <script src="js/main.js" type="module"></script>          
     </head>
     <body>
         <section class="container forms">
             <div class="form login">
                 <div class="form-content">
-                    <header>Login</header>
+                    <header>Iniciar sesion</header>
                     <form id="login-form">
                         <div class="field input-field">
                             <input id="email" type="email" placeholder="Email" class="input" id="username">
@@ -31,7 +34,7 @@
                         </div>
 
                         <div class="field button-field">
-                            <button type="submit">Login</button>
+                            <button type="submit">Iniciar sesion</button>
                         </div>
                     </form>
 
@@ -41,13 +44,6 @@
                 </div>
 
                 <div class="line"></div>
-
-                <div class="media-options">
-                    <a href="#" class="field facebook">
-                        <i class='bx bxl-facebook facebook-icon'></i>
-                        <span>Iniciar sesion Facebook</span>
-                    </a>
-                </div>
 
                 <div class="media-options">
                     <a href="#" class="field google">
@@ -89,17 +85,11 @@
 
                 <div class="line"></div>
 
-                <div class="media-options">
-                    <a href="#" class="field facebook">
-                        <i class='bx bxl-facebook facebook-icon'></i>
-                        <span>Iniciar con Facebook</span>
-                    </a>
-                </div>
 
                 <div class="media-options">
                     <a href="#" class="field google">
                         <img src="img/google-img.jpg" alt="" class="google-img">
-                        <span>Iniciar con Google</span>
+                        <span  id="googleButton">Iniciar con Google</span>
                     </a>
                 </div>
 
