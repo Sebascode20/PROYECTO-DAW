@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(122, 60, 163);
+}
+header {
+    background-color:  white;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15%;
+    border-bottom: 2px solid rgb(122, 60, 163);
+    
+}
+.logo {
+    height: 80px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    height: 50px;
+    width: 100%;
+}
+.hamburger {
+    display: none;
+}
+.nav-bar ul {
+    display: flex;
+}
+.nav-bar ul li a {
+    display: flexbox;
+    color: black;
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.nav-bar ul li a:hover {
+    color: white;
+    background: blueviolet;
+}
+.nav-bar ul li a.active {
+    color: black;
+    background: rgb(209, 196, 218);
+    z-index: 999999;
+}
+@media only screen and (max-width: 900px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: rgb(255, 255, 255);
+        margin: 6px 0;
+        border-radius: 4px;
+    }
+    .nav-bar {
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: rgb(88, 38, 121);
+        transition: 0.2s;
+        overflow: hidden;
+    }
+    .nav-bar.active {
+        height: 450px;
+        z-index: 999999;
+    }
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .nav-bar.nav-bar.active ul {
+        opacity: 1;
+    }
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+        color: #fefefe;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .logo img{
+        height: 35%;
+    }
+}
+
+
+.Bienvenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Bie{
+    background-color: #fefefe;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 35px;
+    width: 350px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.OOO{
+    background-color: #fefefe;
+    border: 1px solid rgb(214, 211, 211);
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 2%;
+	padding-top: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 45px;
+}
+.OOO .pin{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 330px;
+    height: 460px;
+    
+}
+
+.pin {
+    background-color: rgb(122, 60, 163);
+    display: inline-flex;
+    padding: 15px;
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-right: 1%;
+    margin-bottom: 3%;
+}
+
+.pin h3{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+.OOO .pin .mg{
+    width: 100%;
+    height: 70%;
+    margin: 5px auto;
+}
+
+
+
+.OOO .pin .capa{
+    position: absolute;
+    top: 0;
+    background-color: rgb(122, 60, 163);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    height: 82%;
+    width: 91%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.OOO .pin:hover> .capa{
+    visibility: visible;
+    opacity: 1;
+}
+.OOO .pin:hover> .capa h4{
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+.OOO .pin .capa h4{
+    color: #211822;
+    font-size: 18px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-bottom: 40px;
+    transition: all 500ms ease-out;
+    margin-top: 10px;
+}
+
+.buy a{
+    margin-top: 15%;
+    display: inline-block;
+    padding: 15px 20px;
+    background: #3f1970;
+    border-radius: 30px;
+    border: 2px solid #ffffff;
+    color: #cac5c5;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+}
+
